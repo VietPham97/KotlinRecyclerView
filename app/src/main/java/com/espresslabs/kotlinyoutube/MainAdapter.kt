@@ -1,5 +1,6 @@
 package com.espresslabs.kotlinyoutube
 
+import android.content.Intent
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -34,4 +35,13 @@ class MainAdapter(val homeFeed: HomeFeed): RecyclerView.Adapter<HomeViewHolder>(
 
 }
 
-class HomeViewHolder(val view: View): RecyclerView.ViewHolder(view)
+class HomeViewHolder(val view: View): RecyclerView.ViewHolder(view) {
+
+    init {
+        view.setOnClickListener {
+            val intent = Intent(view.context, DetailsActivity::class.java)
+            view.context.startActivity(intent)
+        }
+    }
+
+}

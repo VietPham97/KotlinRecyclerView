@@ -46,9 +46,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setUpRecyclerView() {
-//        my_recycler_view.setBackgroundColor(Color.BLUE)
         my_recycler_view.layoutManager = LinearLayoutManager(this)
-//        my_recycler_view.adapter = MainAdapter()
     }
 
 }
