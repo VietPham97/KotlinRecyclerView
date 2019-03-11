@@ -15,3 +15,11 @@ class Channel(
     val name: String,
     val profileImageUrl: String
 )
+
+class Lesson(
+    val name: String,
+    val duration: String,
+    val number: String,
+    val imageUrl: String,
+    val link: String
+)
